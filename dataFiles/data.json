@@ -1,54 +1,80 @@
 {
-  "loginDetails": {
-    "valid1": {
+  "loginDetails": 
+  {
+    "valid1": 
+    {
       "username": "cypresslover101",
       "password": "Sk@12345"
-             },
+    },
 
-
-"valid2": {
+    "valid2":
+    {
       "username": "Test102",
       "password": "Test@102"
-             },
+    },
 
-"valid3": {
-      "username": "Test103",
-      "password": "Test@103"
-             },
-
-
-    "invalid": 
+    "invalidUsername": 
     {
       "username": "Invalid12345",
-      "password": "Invalid@12345"
+      "password": "Sk@12345"
+    },
+
+    "invalidPassword": 
+    {
+      "username": "cypresslover101",
+      "password": "abc@12345"
+    },
+
+    "emptyFields": 
+    {
+      "username": "",
+      "password": ""
+    },
+
+    "invalidMessage": 
+    {
+      "message": "Invalid username/password",
+       "uNameExistingMsg": "UsernameExistsException: User already exists",
+       "successMsg" : "Registration is successful"
     }
-  
   },
-  "userCreationDetails": {
-    "user1": {
-     
+
+  "userCreationDetails":
+   {
+    "user1": 
+    {
       "firstName": "Test",
       "lastName": "User",
       "password": "Test@101",
       "confirmPassword": "Test@101",
-      "successMessage" : "Registration is successful"
+      "successMessage": "Registration is successful"
     },
-    "user2": {
-     "username": "Test@13#!",
+    "user2": 
+    {
+      "username": "Test@%101",
       "firstName": "Test",
       "lastName": "User",
       "password": "Test@102",
       "confirmPassword": "Test@102",
-      "successMessage" : "Registration is successful"
+      "successMessage": "Registration is successful"
     },
-    "user3": {
-     
+    "Neg_user1": 
+    {
+      "ExistingUsername": "cypresslover101",
       "firstName": "Test",
       "lastName": "User",
       "password": "Test@103",
-      "confirmPassword": "Test@103",
-      "UsernameExistingMsg" : "UsernameExistsException: User already exists"
+      "confirmPassword": "Test@103"
+    },
+    "Neg_user2": 
+    {
+      "wrongUsername": "123456",
+      "firstName": "Test",
+      "lastName": "User",
+      "password": "Test@103",
+      "confirmPassword": "Test@103"
     }
-    
+
+   
   }
 }
